@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btCadastrar"
+    android:background="@color/bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Cadastro"
+        app:titleTextColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/etRegisterName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_edit_text_rounded"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btSelectedPhoto" />
+
+    <EditText
+        android:id="@+id/etRegisterEmail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_text_rounded"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/etRegisterName"
+        app:layout_constraintStart_toStartOf="@+id/etRegisterName"
+        app:layout_constraintTop_toBottomOf="@+id/etRegisterName" />
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_text_rounded"
+        android:ems="10"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/etRegisterEmail"
+        app:layout_constraintStart_toStartOf="@+id/etRegisterEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etRegisterEmail" />
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bg_button_rounded"
+        android:text="@string/cadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/etRegisterPassword"
+        app:layout_constraintStart_toStartOf="@+id/etRegisterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etRegisterPassword" />
+
+    <Button
+        android:id="@+id/btSelectedPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_button_img_rounded"
+        android:text="@string/foto"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="@+id/btSelectedPhoto"
+        app:layout_constraintBottom_toBottomOf="@+id/btSelectedPhoto"
+        app:layout_constraintEnd_toEndOf="@id/btSelectedPhoto"
+        app:layout_constraintStart_toStartOf="@id/btSelectedPhoto"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>

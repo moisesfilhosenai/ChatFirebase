@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "767243453399",
+    "project_id": "chatfirebase-moises",
+    "storage_bucket": "chatfirebase-moises.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767243453399:android:cfb29e079ca94866cb0192",
+        "android_client_info": {
+          "package_name": "com.example.chatfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOw2kSg7yGqEuBG6LkC8GgrHykr2_Y9yU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
