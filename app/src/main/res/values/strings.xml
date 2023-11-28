@@ -7,4 +7,9 @@
     <string name="cadastrar">Cadastrar</string>
     <string name="nome">Nome</string>
     <string name="foto">Foto</string>
+    <string name="contatos">Contatos</string>
+    <string name="messages">Mensagens</string>
+    <string name="logout">Logout</string>
+    <string name="enviar">Enviar</string>
+    <string name="digite_a_mensagem">Digite a mensagem</string>
 </resources>
