@@ -41,4 +41,8 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth")
     implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation("com.google.firebase:firebase-storage")
+    implementation("com.google.firebase:firebase-firestore")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation ("com.squareup.picasso:picasso:2.8")
 }
