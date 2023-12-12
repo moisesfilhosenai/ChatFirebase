@@ -112,11 +112,11 @@ public class RegisterActivity extends AppCompatActivity {
                                 String profileUrl = uri.toString();
                                 User user = new User(uuid, username, profileUrl);
                                 FirebaseFirestore.getInstance().collection("users")
-                                        .add(user)
-                                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                        .document(uuid)
+                                        .set(user)
+                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
                                             @Override
-                                            public void onSuccess(DocumentReference documentReference) {
-                                                Log.i("APP", documentReference.getId());
+                                            public void onSuccess(Void unused) {
                                                 Intent intent = new Intent(RegisterActivity.this, MessagesActivity.class);
                                                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                                 startActivity(intent);
